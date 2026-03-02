@@ -1,0 +1,224 @@
+.container {
+  max-width: 420px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.line-icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+  box-shadow: 0 0 15px rgba(130, 64, 153, 0.4);
+}
+
+.title-group h1 {
+  font-size: 1.25rem;
+  margin: 0;
+  letter-spacing: 0.1rem;
+}
+
+.title-group p {
+  font-size: 0.875rem;
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.time-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.current-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+}
+
+.current-clock {
+  font-size: 2.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  background: linear-gradient(to right, #fff, #94a3b8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.day-badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  background-color: #ef4444;
+  /* Weekend red */
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.day-badge.weekday {
+  background-color: #10b981;
+  /* Weekday green */
+}
+
+.next-train-card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.next-train-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--secondary);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge.regular {
+  background-color: var(--secondary);
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.dest {
+  font-size: 0.875rem;
+  color: var(--accent);
+}
+
+.train-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.time-display-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-big {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -2px;
+  line-height: 1.1;
+}
+
+.arrival-time {
+  font-size: 0.85rem;
+  color: var(--accent);
+  margin-top: -0.2rem;
+}
+
+.arrival-time span {
+  font-weight: 700;
+}
+
+.countdown-group {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.countdown-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.countdown-unit {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.departing {
+  color: #fbbf24;
+  font-weight: 700;
+  animation: pulse 1s infinite;
+}
+
+.following-section h3 {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.train-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.train-item {
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.75rem;
+}
+
+.item-info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.item-time {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.item-arrival {
+  font-size: 0.75rem;
+  color: var(--accent);
+}
+
+.item-diff {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.footer-info {
+  margin-top: auto;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 0.75rem;
+}

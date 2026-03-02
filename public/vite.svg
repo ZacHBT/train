@@ -1,0 +1,26 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rounded Purple Outer Box -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#824099" />
+  
+  <!-- Train Cabin -->
+  <rect x="12" y="16" width="40" height="36" rx="6" fill="#F8FAFC" />
+  
+  <!-- Windshield -->
+  <rect x="16" y="20" width="32" height="12" rx="3" fill="#1E293B" />
+  
+  <!-- Light Reflection on Windshield -->
+  <path d="M16 26 L26 20 L30 20 L20 28 Z" fill="#0070bc" opacity="0.8" />
+  
+  <!-- Glowing Headlights -->
+  <circle cx="20" cy="42" r="4" fill="#FBBF24" />
+  <circle cx="44" cy="42" r="4" fill="#FBBF24" />
+  <circle cx="20" cy="42" r="2" fill="#FFFFFF" />
+  <circle cx="44" cy="42" r="2" fill="#FFFFFF" />
+  
+  <!-- Regular Train Blue Stripe -->
+  <rect x="12" y="34" width="40" height="4" fill="#0070bc" />
+  
+  <!-- Tracks Below -->
+  <rect x="20" y="52" width="8" height="2" rx="1" fill="#4B5563" />
+  <rect x="36" y="52" width="8" height="2" rx="1" fill="#4B5563" />
+</svg>
